@@ -1,0 +1,25 @@
+
+
+
+.ma-f{
+  margin: 1em auto;
+}
+
+.bg-orange{
+  background-color: rgb(255, 217, 0);
+}
+
+.w100{
+  width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 960px) {
+
+.style-cont{
+  max-width: 500px;
+  margin: 0 auto;
+}
+}
