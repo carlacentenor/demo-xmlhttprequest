@@ -31,7 +31,7 @@ function addNews(array) {
       <div class = "col-12 col-lg-9">
       <h3 class="title">${element.headline.main}</h3>
       <p class="card-text">${element.snippet}</p>
-      <a  class="card-link" href=${element.web_url}>View more</a>
+      <a  class="card-link btn btn-primary" href=${element.web_url}>View more</a>
       </div>
       </div>
       </div>`;
@@ -59,6 +59,7 @@ btnXhr.addEventListener('click', function(event) {
 
 btnFetch.addEventListener('click', function() {
   event.preventDefault();
+  responseContainer.innerHTML = '';
   searchForText = searchFile.value;
   let url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchForText}&api-key=bce617f873ee4fd8a55646fdab233c69`;
   fetch(url)
